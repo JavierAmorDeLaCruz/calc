@@ -6,12 +6,16 @@
 	<script type="text/javascript">
 
 function vaciar() {
-	document.getElementByID("n1").value="";
+	document.getElementById("n1").value="";
 }
 
 function cuadrado(){
-	var num= document.getElementByID("n1");
+	var num= document.getElementById("n1");
 	num.value=num.value*num.value;
+}
+function cubo(){
+	var num= document.getElementById("n1");
+	num.value=num.value*num.value*num.value;
 }
 	</script>
 </head>
@@ -21,6 +25,6 @@ Número:
 <input type="text" id="n1" onclick="vaciar()">
 <p>
 <button onclick="cuadrado()">x<sup>2</sup></button>
-
+<button onclick="cubo">x<sup>3</sup></button>
 </body>
 </html>
